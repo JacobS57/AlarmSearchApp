@@ -34,12 +34,28 @@
         .hidden {
             display: none;
         }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .logo {
+            width: 150px; /* Adjust this to fit your logo */
+            height: auto;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Alarm List Search</h1>
+    <div class="header">
+        <h1>Alarm List Search</h1>
+        <img src="Roeslein.png" alt="Logo" class="logo">
+    </div>
     <input type="text" id="searchInput" placeholder="Search alarms...">
-    <div id="content">
+    <!-- Rest of your HTML (table and script) remains unchanged -->
         <table>
             <thead>
                 <tr>
